@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <title>Cabs Online</title>
+    <meta charset="utf-8" http-equiv="content-type" content="text/html" />
+    <link rel="icon" href="Images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="formvalidation.js"></script>
+
+    <form method="POST" id="fomID">
+
+	<!--Main title and Information-->
+        <div id="header">
+            <img src="Images/ic_taxi_logo" width="40" height="40" alt="taxi" style="float:left" /><strong><font size="+3" style="float:left">Cabs Online | Services</font></strong>
+            <p style="float:right"> Pierce Miller | 14872510 | <a href="mailto: piercemiller23@gmail.com">piercemiller23@gmail.com</a></p>
+            <br>
+            <br>
+        </div>
+
+        <!--Navigation Bar Items-->
+        <div class="topnav">
+            <a href="admin.html">Admin</a>
+            <a class="active" href="booking.html">Services</a>
+            <div class="topnav-right">
+                <a href="references.html">References</a>
+            </div>
+        </div>
+
+	<div class="bg"></div>
+      
+        Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <input type="text" name="name" maxlength="40" title=" Enter a name using letters, no numbers or special characters" id="name" placeholder="Name" />
+        <br>
+        <br> Phone Number:
+        <input type="text" name="phone_num" maxlength="15" title=" Enter your number, no letters or special characters" id="phone_num" placeholder="Phone" />
+        <br>
+        <br> Unit Number:&nbsp&nbsp&nbsp
+        <input type="text" name="unit_num" maxlength="4" title=" Enter your unit number, no special characters" placeholder="Unit Number" />
+        <br>
+        <br> Street Number:
+        <input type="text" name="street_num" maxlength="4" title=" Enter your unit number, no special characters" id="street_num" placeholder="Street Number" />
+        <br>
+        <br> Street Name:&nbsp&nbsp&nbsp
+        <input type="text" name="street_name" maxlength="40" title=" Enter your street name , no numbers or special characters" id="street_name" placeholder="Street Name" />
+        <br>
+        <br> Suburb:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <input type="text" name="suburb" maxlength="40" title=" Enter your suburb , no numbers or special characters" id="suburb" placeholder="Suburb" />
+        <br>
+        <br> Destination:&nbsp&nbsp&nbsp&nbsp&nbsp
+        <input type="text" name="destination" title=" Enter destination, no special characters" id="destination" placeholder="Destination" />
+        <br>
+        <br> Pick-up Date:&nbsp&nbsp&nbsp
+        <input type="date" name="pickup_date" id="pickup_date" title="Enter your pick up time" />
+        <br>
+        <br> Pick-up Time:&nbsp&nbsp&nbsp
+        <input type="time" name="pickup_time" title="Enter your pick up time" id="pickup_time" />
+        <br>
+        <br>
+
+	<button class="button" type="button" onClick="getUserInput()"><span>Book </span></button>
+        <button class="button" type="button" onClick="location.reload(true); "><span>Refresh </span></button>
+
+
+
+        <!-- Provides link to admin page only provided so marker can view it -->
+        <br>
+        <br>
+        <!-- Response message from booking -->
+        <div id="bookingMessage">
+            <p>
+                <h2></h2>
+            </p>
+        </div>
+        </div>
+    </form>
+</body>
+
+</html>

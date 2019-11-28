@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Cabs Online</title>
+    <meta charset="utf-8" http-equiv="content-type" content="text/html" />
+    <link rel="icon" href="Images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="adminRequest.js"></script>
+    <script src="assignRequest.js"></script>
+
+    <form method="POST" id="adForm">
+
+            <!--Main title and Information-->
+            <div id="header">
+                <img src="Images/ic_taxi_logo" width="40" height="40" alt="taxi" style="float:left" /><strong><font size="+3" style="float:left">Cabs Online | Admin</font></strong>
+                <p style="float:right"> Pierce Miller | 14872510 | <a href="mailto: piercemiller23@gmail.com">piercemiller23@gmail.com</a></p>
+                <br>
+                <br>
+            </div>
+
+            <!--Navigation Bar Items-->
+            <div class="topnav">
+                <a class="active" href="admin.html">Admin</a>
+                <a href="booking.html">Services</a>
+                <div class="topnav-right">
+                    <a href="references.html">References</a>
+                </div>
+            </div>
+            <div class="bg"></div>        
+	<!-- Divs used to help cordinate layout of page when using custom layout -->
+        <br>
+        <br>
+
+            Reference number:
+            <input type="text" name="ref_num" maxlength="10" title="Enter the booking reference number" id="ref_num" placeholder="Reference Number" />
+            <br>
+            <br>
+
+            <button class="button" type="button" onClick="assignDriver()"><span>Assign </span></button>
+            <button class="button" type="button" onClick="pickUpRequests()"><span>Requests </span></button>
+	    <button class="button" type="button" onClick="location.reload(true); "><span>Refresh </span></button>	 
+
+            <br>
+            <br>
+            <!-- pick up requests will be displayed here -->
+            <div id="pickup_request">
+                <p>
+                    <h2></h2></p>
+            </div>
+            <br>
+            <br>
+            <!-- assigned requests will be displayed here -->
+            <div id="assignTaxi">
+                <p>
+                    <h2></h2></p>
+            </div>
+    </form>
+</body>
+</html>
